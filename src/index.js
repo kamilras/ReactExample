@@ -4,34 +4,11 @@ import './index.css';
 import ListItems from './App';
 import reportWebVitals from './reportWebVitals';
 
-const data = {
-  users: [
-    {
-      id: 1,
-      age: 29,
-      name: "Bartek",
-      sex: "male"
-    },
-    {
-      id: 2,
-      age: 15,
-      name: "Kasia",
-      sex: "female"
-    },
-    {
-      id: 3,
-      age: 10,
-      name: "Łukasz",
-      sex: "male"
-    }
-  ]
-}
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ListItems data={data} />
+    <ListItems />
   </React.StrictMode>
 );
 
