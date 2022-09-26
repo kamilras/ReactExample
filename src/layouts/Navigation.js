@@ -3,17 +3,17 @@ import { NavLink } from 'react-router-dom';
 import "../styles/Navigation.css"
 
 const list = [
-    { name: "start", path: "/", end: true },
-    { name: "produkty", path: "/products" },
-    { name: "kontakt", path: "/contact" },
-    { name: "panel admina", path: "/admin" },
+    { id: 1, name: "start", path: "/", end: true },
+    { id: 2, name: "produkty", path: "/products" },
+    { id: 3, name: "kontakt", path: "/contact" },
+    { id: 4, name: "panel admina", path: "/admin" },
 
 ]
 
-const Navigation = (props) => {
+const Navigation = () => {
 
     const menu = list.map(item => (
-        <li key={item.name}>
+        <li key={item.id}>
             <NavLink to={item.path} end={item.end ? true : false}>{item.name}</NavLink>
         </li>
     ))

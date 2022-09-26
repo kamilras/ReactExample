@@ -11,16 +11,13 @@ import img3 from '../images/header3.jpg';
 
 const Header = (props) => {
     return (
-        <>
-            <Routes>
-                <Route path="/" element={<Img img={img1} alt={"ulica w mieście"} />} />
-                <Route path="/products" element={<Img img={img2} alt={"ulica w mieście"} />} />
-                <Route path="/contact" element={<Img img={img3} alt={"ulica w mieście"} />} />
-                <Route path="/admin" element={<Img img={img3} alt={"ulica w mieście"} />} />
-                <Route path="/admin" element={<Img img={img3} alt={"ulica w mieście"} />} />
-                {/* <Route path="/" render={() => (<img src={img1} alt={"ulica w mieście"} />)} /> */}
-            </Routes>
-        </>
+        <Routes>
+            <Route path="/" element={<Img img={img1} alt={"ulica w mieście"} />} />
+            <Route path="/products" element={<Img img={img2} alt={"ulica w mieście"} />} />
+            <Route path="/contact" element={<Img img={img2} alt={"ulica w mieście"} />} />
+            <Route path="/admin" element={<Img img={img3} alt={"ulica w mieście"} />} />
+            <Route path='/*' element={<Img img={img3} alt={"ulica w mieście"} />} />
+        </Routes>
     );
 }
 
