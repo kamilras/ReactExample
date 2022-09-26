@@ -10,6 +10,8 @@ div.app {
 
 header {
     flex-basis: 30vh;
+    position: relative;
+    overflow: hidden;
 }
 
 main {
